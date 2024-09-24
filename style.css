@@ -16,9 +16,9 @@ body {
 }
 
 header {
-    background-image: url('wallpaperflare.com_wallpaper (4).jpg'); /* Replace with the actual image URL */
-    background-size: cover; /* Ensures the image covers the entire area */
-    background-position: center; /* Centers the image */
+    background-image: url('wallpaperflare.com_wallpaper (4).jpg'); 
+    background-size: cover;
+    background-position: center;
     color: #fff;
     padding: 30px;
     text-align: center;
@@ -33,7 +33,7 @@ header {
     flex-direction: column;
     align-items: center;
     position: relative;
-    z-index: 1; /* Ensures the content is above the background */
+    z-index: 1;
 }
 
 header::before {
@@ -43,8 +43,8 @@ header::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Adds a dark overlay for better text contrast */
-    z-index: 0; /* Places overlay below the content */
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
 }
 
 .profile-pic {
@@ -53,7 +53,7 @@ header::before {
     border-radius: 50%;
     border: 5px solid #fff;
     margin-bottom: 15px;
-    z-index: 1; /* Keeps the profile picture above the background */
+    z-index: 1;
 }
 
 h1 {
@@ -118,9 +118,10 @@ ul.skills-list li {
 }
 
 .social-links a i {
-    margin-right: 10px; /* Space between icon and text */
+    margin-right: 10px;
 }
 
+/* Hover effect */
 .social-links a:hover {
     background-color: #606c5f;
 }
@@ -130,4 +131,23 @@ footer {
     text-align: center;
     color: #7f8c8d;
 }
+
+/* Mobile responsiveness: Make social media links smaller for screens less than 600px */
+@media (max-width: 600px) {
+    .social-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-links a {
+        padding: 8px 15px; /* Reduce padding */
+        font-size: 0.9rem; /* Reduce font size */
+    }
+
+    .social-links a i {
+        margin-right: 5px; /* Reduce space between icon and text */
+        font-size: 0.9rem; /* Reduce icon size */
+    }
+}
+
 
